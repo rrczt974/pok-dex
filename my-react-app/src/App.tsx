@@ -3,13 +3,12 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import "./App.css";
 import MyTitle from "./components/MyTitle";
+import PokemonCard from "./components/PokemonCard";
 
-function App() {
-  return (
-    <section>
-      <MyTitle />
-    </section>
-  );
-}
+<div>
+  <main>
+    <PokemonCard />
+  </main>
+</div>
 
-export default App;
+export default PokemonCard;
