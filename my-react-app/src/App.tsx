@@ -22,7 +22,7 @@ const pokemonList = [
 function App () {
 return (
   <>
-    <PokemonCard pokemon={pokemonList[1]} />
+    <PokemonCard pokemon={pokemonList[0]} />
   </>
 )
 }
