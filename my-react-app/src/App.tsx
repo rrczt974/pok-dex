@@ -5,10 +5,26 @@ import "./App.css";
 import MyTitle from "./components/MyTitle";
 import PokemonCard from "./components/PokemonCard";
 
-<div>
-  <main>
-    <PokemonCard />
-  </main>
-</div>
+// ma pokemon list 
+const pokemonList = [
+	{
+	  name: "bulbasaur",
+	  imgSrc:
+		"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
+	},
+	{
+	  name: "mew",
+	},
+  ];
+  
 
-export default PokemonCard;
+// Ma fonction App
+function App () {
+return (
+  <>
+    <PokemonCard pokemon={pokemonList[1]} />
+  </>
+)
+}
+
+export default App;
