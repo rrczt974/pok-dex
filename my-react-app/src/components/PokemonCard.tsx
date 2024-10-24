@@ -5,8 +5,8 @@ interface PokemonProps {
 }
 
 // ma fonction pokemonCards
-function PokemonCard({pokemon} : PokemonProps) {
-	
+function PokemonCard(pokemon : PokemonProps) {
+	 
 	return (
 		<figure>
 			<img
