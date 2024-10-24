@@ -20,5 +20,4 @@ function PokemonCard({pokemon} : PokemonProps) {
 
 export default PokemonCard;
 // 
-				
-//={pokemon[1].imgSrc} // = true ? pokemon[0].name : "???"}
+	
