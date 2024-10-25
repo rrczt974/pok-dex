@@ -40,8 +40,8 @@ function App () {
  
 return (
   <>
-      <PokemonCard imgSrc={pokemonList[pokemonIndex].imgSrc} name={pokemonList[pokemonIndex].name} />
-      <NavBar pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} pokemonList={pokemonList} />
+      <PokemonCard pokemon={pokemonList[pokemonIndex]} />
+      <NavBar pokemonList={pokemonList} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex}/>
   </>
 )
 }
