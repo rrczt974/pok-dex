@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface Pokemon {
 	name: string;
 	imgSrc?: string;
@@ -10,10 +12,19 @@ interface NavBarProps {
 }
 
 
-function NavBar({pokemonList, setPokemonIndex} : NavBarProps) {
+function NavBar({pokemonList, setPokemonIndex, pokemonIndex} : NavBarProps) {
   const handleClick = (index:number) => 
     {setPokemonIndex(index)};
-   
+  
+     useEffect(() => { 
+      if (pokemonIndex === 3) {
+        alert("pika pikachu !!!");
+      } else {
+        alert("hello pokemon trainer :)");
+      }
+    }, [pokemonIndex]); 
+    
+    
 	return (
 		<>
           {pokemonList.map((pokemon,index)=> 
